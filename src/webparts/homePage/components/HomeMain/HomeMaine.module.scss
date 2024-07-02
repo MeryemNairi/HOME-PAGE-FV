@@ -1,0 +1,57 @@
+.HomeMaine{
+    max-width: 1920px;
+
+    
+   
+
+}
+.cards_holder{
+    max-width: 1728px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'N1 N1 N2'
+                        'N3 N4 N4'
+                        'N5 N6 N7'
+                        'N8 N8 N7';
+    gap: 1rem;
+    margin: 0 auto;
+}
+.N1_holder, .N2_holder, .N3_holder, .N4_holder, .N5_holder, .N6_holder, .N7_holder, .N8_holder {
+   min-width: 450px;
+   min-height: 499px;
+   width: 100%;
+   overflow: hidden;
+   box-shadow: 2px 3px 52px -23px rgba(97,97,97,0.39);
+    -webkit-box-shadow: 2px 3px 52px -23px rgba(97,97,97,0.39);
+    -moz-box-shadow: 2px 3px 52px -23px rgba(97,97,97,0.39);
+   background-color: #FFFFFF;
+}
+.N1_holder{
+    grid-area: N1;
+}
+.N2_holder{
+    grid-area: N2;
+}
+.N3_holder{
+    grid-area: N3;
+}
+.N4_holder{
+    grid-area: N4;
+}
+.N5_holder{
+    grid-area: N5;
+}
+.N6_holder{
+    grid-area: N6;
+}
+.N7_holder{
+    grid-area: N7;
+}
+.N8_holder{
+    grid-area: N8;
+}

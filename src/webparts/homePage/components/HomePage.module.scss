@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.CommPage{
+
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none !important;
+  overflow: hidden !important;
+}
+
+
+/* SavoirPlus.module.scss */
+
+.savoirPlusContainer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.savoirPlusEnterActive {
+  max-height: 500px; /* Adjust based on the content size */
+}
+
+.savoirPlusExitActive {
+  max-height: 0;
+}
+

@@ -1,0 +1,95 @@
+.video_container {
+   width: 100%;
+   height: 100%;
+   background-color: #044123;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+ 
+   .video_holder {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ 
+     .topBand,
+     .bottomBand {
+       height: 80px;
+       width: 100%;
+       background-color: #044123;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       left: 0;
+       color: white;
+       font-size: 18px;
+       z-index: 10;
+     }
+    
+    .scrollButton {
+      margin-left: auto; /* Pushes the button to the right */
+    }
+ 
+     .topBand {
+       top: 0;
+       padding-left: 10px; 
+       height: 50px;
+       
+     }
+
+     .logoSVG {
+      margin-right: 10px; 
+    }
+ 
+     .bottomBand {
+       bottom: 0;
+     }
+ 
+     .video {
+       width: 100%;
+       height: calc(100% - 140px); /* Hauteur de la vidéo ajustée pour laisser de la place aux bandes de texte */
+       object-fit: cover; /* Pour remplir le conteneur vidéo */
+     }
+ 
+     .PlayBtn {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+ 
+       .BTN_CIRCLE {
+         border-radius: 50%;
+         width: 115px;
+         height: 115px;
+         background-color: #58c1a3;
+         opacity: 0.5;
+         position: relative;
+       }
+ 
+       .PlayIcon {
+         position: relative;
+         button.Play {
+           text-decoration: none;
+           border: none;
+           background: transparent;
+           cursor: pointer;
+ 
+           svg {
+             width: 49px;
+             height: 55px;
+           }
+         }
+       }
+     }
+   }
+ }
+ 
