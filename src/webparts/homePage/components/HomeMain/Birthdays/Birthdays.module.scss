@@ -1,0 +1,90 @@
+.birthdays {
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    .container {
+      display: flex;
+      align-items: center; /* Centre les éléments verticalement */
+      flex-direction: column; /* Permet d'empiler les cartes verticalement */
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+  
+      &.animating .cardWrapper {
+        transform: translateY(-100%);
+      }
+    }
+  
+    .cardWrapper {
+      display: flex;
+      justify-content: center; /* Centre les cartes horizontalement */
+      align-items: center; /* Centre les cartes verticalement */
+      margin-bottom: 10px; /* Ajustement de la marge entre les cartes */
+      transition: transform 0.5s;
+  
+      .card {
+        min-width: 350px; /* Largeur minimale des cartes */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px; /* Espacement interne des cartes */
+        background-color: transparent;
+        margin-left: 10px;
+        font-family: 'Montserrat, sans-serif';
+  
+        .name {
+          font-size: 18px; /* Taille de la police pour le nom */
+          font-weight: bold;
+          margin-bottom: 8px; /* Marge en bas du nom */
+          color: #044123;
+        }
+  
+        .message {
+          font-size: 16px;
+          color: #044123;
+        }
+      }
+  
+      &:last-child {
+        margin-bottom: 0; /* Supprime la marge de la dernière carte */
+      }
+    }
+  
+    .seeMore {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+  
+      button {
+        padding: 12px 0; /* Ajustement du rembourrage du bouton */
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000;
+        border: 1px solid #f2f2f2;
+        border-radius: 0;
+        cursor: pointer;
+        font-family: 'Montserrat, sans-serif';
+        width: 100%;
+        box-sizing: border-box;
+  
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  
