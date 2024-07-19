@@ -1,21 +1,19 @@
-
+// LN_Service.ts
 import { sp } from "@pnp/sp/presets/all";
 
-// Define the interface for the data structure
 export interface LNItem {
   News: string;
-  
+  Description: string; // Corrected the property name
 }
 
 export const fetchLNData = async (): Promise<LNItem[]> => {
   try {
-    const response = await sp.web.lists.getByTitle("LatestNewsV2").items.select("News").get();
+    const response = await sp.web.lists.getByTitle("LatestNewsV2").items.select("News", "Description").get();
     console.log("Latest News data response:", response);
     if (response && response.length > 0) {
-      // Fetch image URLs and map the response to construct the correct image URL
-      
-      const LN: LNItem[] = response.map((item, index) => ({
-       News: item.News,
+      const LN: LNItem[] = response.map((item) => ({
+        News: item.News,
+        Description: item.Description, // Corrected to match the API response
       }));
       return LN;
     } else {
@@ -27,5 +25,3 @@ export const fetchLNData = async (): Promise<LNItem[]> => {
     return [];
   }
 };
-
-

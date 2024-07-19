@@ -140,9 +140,6 @@ const InternalJobs: React.FC = () => {
                 <div className={styles.job_title}>
                   <h2>{job.offre_title}</h2>
                 </div>
-                <div className={styles.job_description}>
-                  <p>{job.short_description}</p>
-                </div>
                 <div className={styles.card_button}>
                   <div className={styles.lieu}>
                     <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">

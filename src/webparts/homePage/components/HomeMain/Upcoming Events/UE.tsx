@@ -77,7 +77,7 @@ const UE: React.FC = () => {
               <p>{ue.Event}</p>
             </div>
             <div className={Styles.date}>
-              <p>{ue.Date}</p> {/* Display formatted date */}
+              <p>{ue.Date}</p> 
             </div>
             <div className={Styles.UpEv_content}>
               <p>{ue.Desciption}</p>
