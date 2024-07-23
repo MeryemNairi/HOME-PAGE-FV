@@ -29,11 +29,11 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    white-space: nowrap; /* Ensure the text does not wrap to the next line */
+    white-space: nowrap; 
     align-items: center;
-    animation: ticker 30s linear infinite; /* Slower scrolling speed */
+    animation: ticker 30s linear infinite; 
 
-    span { /* Changed p to span for inline elements */
+    span {
         font-family: inherit;
         font-size: 18px;
         font-weight: 600;
@@ -41,13 +41,18 @@
     }
 }
 
+.News_content.grabbing {
+    cursor: grabbing; 
+}
+
+
 .logo {
-    margin: 0 1rem; /* Add space around the SVG logo */
+    margin: 0 1rem; 
 }
 
 @keyframes ticker {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
