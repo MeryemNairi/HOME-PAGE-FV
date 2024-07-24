@@ -95,19 +95,18 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.buttom_part}>
-                    <div className={styles.urls}>
-                        <div className={styles.url}><a href="#">Home</a></div>
-                        <div className={styles.url}><a href="#">Communication</a></div>
-                        <div className={styles.url}><a href="#">Career</a></div>
-                        <div className={styles.url}><a href="#">People&Culture</a></div>
-                    </div>
-                    <div className={styles.line}>
+    <div className={styles.urls}>
+        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/Home.aspx">Home</a></div>
+        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/CommPageV5.aspx">Communication</a></div>
+        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/CareerPageV5.aspx">Career</a></div>
+        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/P&CFinaleV2.aspx">People&Culture</a></div>
+    </div>
+    <div className={styles.line}></div>
+    <div className={styles.cooperate}>
+        <p>© cnexia 2024</p>
+    </div>
+</div>
 
-                    </div>
-                    <div className={styles.cooperate}>
-                         <p>© cnexia 2024</p>
-                    </div>
-                </div>
             </div>
         </div>
     );
