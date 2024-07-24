@@ -44,7 +44,7 @@ const Latest_News: React.FC = () => {
             <div className={Styles.left_line} />
             <div className={Styles.news_content}>
               <p className={Styles.newsItem}>
-                <span className={Styles.news}>{item.News}</span> <span className={Styles.news}>-</span> <span className={Styles.news}>{item.Description}</span>
+                <span className={Styles.news}>{item.News}</span> 
               </p>
             </div>
           </div>

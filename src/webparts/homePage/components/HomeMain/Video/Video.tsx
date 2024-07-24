@@ -99,13 +99,13 @@ const Video: React.FC<IvideotNewsProps> = (props: IvideotNewsProps) => {
                 <p style={{ fontWeight: 'bold', marginLeft: '10px' }}>Video:</p>
                 <p style={{ marginLeft: '10px' }}>{currentVideoTitle}</p>
                 </div>
-              <button style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToPreviousVideo}>
+              <button  className={styles.btn_left} style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToPreviousVideo}>
                 <svg width="30" height="18" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="-0.00146484" width="30" height="18" fill="none" />
                   <path d="M26.9224 4.18018L17.1155 13.987L26.9224 23.7939" stroke="#00966C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
-              <button style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToNextVideo}>
+              <button className={styles.btn_right} style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToNextVideo}>
                 <svg width="30" height="18" viewBox="0 0 46 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="-0.00146484" width="30" height="18" fill="none" />
                   <path d="M19.4668 4.18018L29.2737 13.987L19.4668 23.7939" stroke="#00966C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

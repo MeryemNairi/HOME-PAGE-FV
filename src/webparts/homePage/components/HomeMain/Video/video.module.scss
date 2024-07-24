@@ -35,7 +35,31 @@
     .scrollButton {
       margin-left: auto; /* Pushes the button to the right */
     }
+
+    .btn_left, .btn_right{
+      width: 53px;
+      height: 34px;
+      text-decoration: none;
+      border: none;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform .2s;
+      cursor: pointer;
+      margin-right: 10px; /* Ajoutez une marge droite pour espacer les boutons */
+
+  
+  }
+  .btn_left:hover, .btn_right:hover{
+      transform: scale(1.1);
+  }
  
+  .contreolers_holder{
+    display: flex;
+    flex-direction: row;
+    gap: .1rem;
+}
      .topBand {
        top: 0;
        padding-left: 10px; 
