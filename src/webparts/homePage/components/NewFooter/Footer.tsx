@@ -29,20 +29,21 @@ const Footer: React.FC = () => {
                         </div></a>
 
 
-                        <a href="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/Assets/Forms/AllItems.aspx?id=%2Fsites%2FCnexiaForEveryone%2FAssets%2FCnexia%20Welcome%20Book%20VF%201504%2Epdf&parent=%2Fsites%2FCnexiaForEveryone%2FAssets&p=true&ga=1"><div className={styles.link_holder}>
-                            <div className={styles.link_icon}>
+                        <a href="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/Assets/Cnexia%20Welcome%20Book%20VF%201504.pdf" target="_blank">
+                            <div className={styles.link_holder}>
+                                <div className={styles.link_icon}>
 
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M29.6875 15.625H40.625V18.75H29.6875V15.625ZM29.6875 23.4375H40.625V26.5625H29.6875V23.4375ZM29.6875 31.25H40.625V34.375H29.6875V31.25ZM9.375 15.625H20.3125V18.75H9.375V15.625ZM9.375 23.4375H20.3125V26.5625H9.375V23.4375ZM9.375 31.25H20.3125V34.375H9.375V31.25Z" fill="white" />
-                                    <path d="M43.75 7.8125H6.25C5.4212 7.8125 4.62634 8.14174 4.04029 8.72779C3.45424 9.31384 3.125 10.1087 3.125 10.9375V39.0625C3.125 39.8913 3.45424 40.6862 4.04029 41.2722C4.62634 41.8583 5.4212 42.1875 6.25 42.1875H43.75C44.5788 42.1875 45.3737 41.8583 45.9597 41.2722C46.5458 40.6862 46.875 39.8913 46.875 39.0625V10.9375C46.875 10.1087 46.5458 9.31384 45.9597 8.72779C45.3737 8.14174 44.5788 7.8125 43.75 7.8125ZM6.25 10.9375H23.4375V39.0625H6.25V10.9375ZM26.5625 39.0625V10.9375H43.75V39.0625H26.5625Z" fill="white" />
-                                </svg>
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.6875 15.625H40.625V18.75H29.6875V15.625ZM29.6875 23.4375H40.625V26.5625H29.6875V23.4375ZM29.6875 31.25H40.625V34.375H29.6875V31.25ZM9.375 15.625H20.3125V18.75H9.375V15.625ZM9.375 23.4375H20.3125V26.5625H9.375V23.4375ZM9.375 31.25H20.3125V34.375H9.375V31.25Z" fill="white" />
+                                        <path d="M43.75 7.8125H6.25C5.4212 7.8125 4.62634 8.14174 4.04029 8.72779C3.45424 9.31384 3.125 10.1087 3.125 10.9375V39.0625C3.125 39.8913 3.45424 40.6862 4.04029 41.2722C4.62634 41.8583 5.4212 42.1875 6.25 42.1875H43.75C44.5788 42.1875 45.3737 41.8583 45.9597 41.2722C46.5458 40.6862 46.875 39.8913 46.875 39.0625V10.9375C46.875 10.1087 46.5458 9.31384 45.9597 8.72779C45.3737 8.14174 44.5788 7.8125 43.75 7.8125ZM6.25 10.9375H23.4375V39.0625H6.25V10.9375ZM26.5625 39.0625V10.9375H43.75V39.0625H26.5625Z" fill="white" />
+                                    </svg>
 
 
-                            </div>
-                            <div className={styles.link_txt}>
-                                <p>Welcome Book</p>
-                            </div>
-                        </div></a>
+                                </div>
+                                <div className={styles.link_txt}>
+                                    <p>Welcome Book</p>
+                                </div>
+                            </div></a>
 
 
 
@@ -66,7 +67,7 @@ const Footer: React.FC = () => {
                             </div>
                         </div></a>
 
-                        <a href="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/Assets/Forms/AllItems.aspx?id=%2Fsites%2FCnexiaForEveryone%2FAssets%2FGuide%20%2D%20CLEARVIEW%20%2Epdf&parent=%2Fsites%2FCnexiaForEveryone%2FAssets&p=true&ga=1"><div className={styles.link_holder}>
+                        <a href="https://cnexia.sharepoint.com/sites/CnexiaForEveryone/Assets/Guide%20%2D%20CLEARVIEW%20%2Epdf"><div className={styles.link_holder}>
                             <div className={styles.link_icon}>
                                 <svg width="143" height="29" viewBox="0 0 143 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2393_519)">
@@ -96,10 +97,10 @@ const Footer: React.FC = () => {
                 </div>
                 <div className={styles.buttom_part}>
                     <div className={styles.urls}>
-                        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/Home.aspx" target="_blank">Home</a></div>
-                        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/CommPageV5.aspx" target="_blank">Communication</a></div>
-                        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/CareerPageV5.aspx" target="_blank">Career</a></div>
-                        <div className={styles.url}><a href="/sites/CnexiaForEveryone/SitePages/P&CFinaleV2.aspx" target="_blank">People&Culture</a></div>
+                        <div className={styles.url}><a href="/sites/Cnet/SitePages/Home.aspx" target="_blank">Home</a></div>
+                        <div className={styles.url}><a href="/sites/Cnet/SitePages/Communication.aspx" target="_blank">Communication</a></div>
+                        <div className={styles.url}><a href="/sites/Cnet/SitePages/Career.aspx" target="_blank">Career</a></div>
+                        <div className={styles.url}><a href="/sites/Cnet/SitePages/P&C.aspx" target="_blank">People&Culture</a></div>
                     </div>
                     <div className={styles.line}></div>
                     <div className={styles.cooperate}>

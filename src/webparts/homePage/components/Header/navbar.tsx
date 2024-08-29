@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
-          <Link to="/sites/CnexiaForEveryone/SitePages/HomePageV5.aspx" className={`${styles.logo}`}>
+          <Link to="/sites/Cnet/SitePages/Home.aspx" className={`${styles.logo}`}>
 
             <svg width="172" height="40" viewBox="0 0 172 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M96.5175 21.3175V60H87.5555L70.5653 39.3893V60H59.8987V21.3175H68.8607L85.8509 41.9282V21.3175H96.5175Z" fill="#002920" />
