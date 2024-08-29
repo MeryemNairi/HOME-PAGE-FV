@@ -11,7 +11,6 @@ const Video: React.FC<IvideotNewsProps> = (props: IvideotNewsProps) => {
   const [currentVideoIndex, setCurrentVideoIndex] = React.useState<number>(0);
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const [videos, setVideos] = React.useState<string[]>([]);
-  const [currentVideoTitle, setCurrentVideoTitle] = React.useState<string>('');
 
   React.useEffect(() => {
     fetchVideosFromSharePoint();
@@ -25,20 +24,10 @@ const Video: React.FC<IvideotNewsProps> = (props: IvideotNewsProps) => {
     }
   }, [isPlaying, currentVideoIndex]);
 
-  React.useEffect(() => {
-    if (videos.length > 0) {
-      const videoUrl = videos[currentVideoIndex];
-      const videoTitleWithExtension = videoUrl.substring(videoUrl.lastIndexOf('/') + 1);
-      const videoTitle = videoTitleWithExtension.substring(0, videoTitleWithExtension.lastIndexOf('.'));
-      setCurrentVideoTitle(videoTitle);
-    }
-  }, [currentVideoIndex, videos]);
-  
-
   const fetchVideosFromSharePoint = async () => {
     try {
       const response = await fetch(
-        `${props.context.pageContext.web.absoluteUrl}/_api/web/GetFolderByServerRelativeUrl('/sites/CnexiaForEveryone/Assets/Vd-HomePage')/Files`,
+        `${props.context.pageContext.web.absoluteUrl}/_api/web/GetFolderByServerRelativeUrl('/sites/Cnet/Assets/Vd-HomePage')/Files`,
         {
           headers: {
             Accept: 'application/json;odata=nometadata',
@@ -97,15 +86,15 @@ const Video: React.FC<IvideotNewsProps> = (props: IvideotNewsProps) => {
             <div style={{ display: 'flex', alignItems: 'center', marginTop: '20px' }}>
               <div style={{ flex: 1 }}>
                 <p style={{ fontWeight: 'bold', marginLeft: '10px' }}>Video:</p>
-                <p style={{ marginLeft: '10px' }}>{currentVideoTitle}</p>
-                </div>
-              <button  className={styles.btn_left} style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToPreviousVideo}>
+                <p style={{ marginLeft: '10px' }}>Inside Cnexia Tech</p>
+              </div>
+              <button style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToPreviousVideo}>
                 <svg width="30" height="18" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="-0.00146484" width="30" height="18" fill="none" />
                   <path d="M26.9224 4.18018L17.1155 13.987L26.9224 23.7939" stroke="#00966C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
-              <button className={styles.btn_right} style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToNextVideo}>
+              <button style={{ marginRight: '6px', marginTop: '20px' }} onClick={scrollToNextVideo}>
                 <svg width="30" height="18" viewBox="0 0 46 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="-0.00146484" width="30" height="18" fill="none" />
                   <path d="M19.4668 4.18018L29.2737 13.987L19.4668 23.7939" stroke="#00966C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

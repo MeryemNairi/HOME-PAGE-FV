@@ -10,7 +10,7 @@ import {
 import { sp } from "@pnp/sp/presets/all";
 
 import * as strings from 'HomePageWebPartStrings';
-import CareerPage from './components/HomePage';
+import CommPage from './components/HomePage';
 import './HomePageWebPart.module.scss';
 
 
@@ -92,7 +92,7 @@ export default class CareerPageWebPart extends BaseClientSideWebPart<{}> {
     const element: React.ReactElement<{}> = (
       <Router>
         <React.Fragment>
-          <CareerPage context={this.context} />
+          <CommPage context={this.context} />
         </React.Fragment>
       </Router>
     );

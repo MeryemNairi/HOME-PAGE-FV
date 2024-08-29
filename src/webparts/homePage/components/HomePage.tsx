@@ -4,8 +4,6 @@ import { WebPartContext } from '@microsoft/sp-webpart-base';
 import  { useEffect, useRef } from 'react';
 import HomeMaine from './HomeMain/HomeMaine';
 import News from './NewsTicker/News';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 
 
 
@@ -17,7 +15,6 @@ const CommPage: React.FC<{ context: WebPartContext }> = ({ context }) => {
     const [showSavoirPlus, setShowSavoirPlus] = React.useState(false);
     const savoirPlusRef = useRef<HTMLDivElement>(null);
 
-    const isMobile = useMediaQuery('(max-width: 768px)');
 
     const handleClickOutside = (event: MouseEvent) => {
         if (savoirPlusRef.current && !savoirPlusRef.current.contains(event.target as Node)) {
@@ -39,7 +36,7 @@ const CommPage: React.FC<{ context: WebPartContext }> = ({ context }) => {
     return (
         <div className={styles.CommPage}>
             <Navbar />
-            {!isMobile && <News />} {/* N'affiche pas les News sur mobile */}
+            <News/>
             <HomeMaine context={context}/>
             <Footer />
         </div>

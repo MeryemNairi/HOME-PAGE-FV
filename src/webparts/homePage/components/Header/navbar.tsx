@@ -30,25 +30,26 @@ const Navbar: React.FC = () => {
           </Link>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li onClick={removeActive}>
-              <Link to="/sites/CnexiaForEveryone/SitePages/Home.aspx" className={`${styles.navLink}`}>
+              <Link to="/sites/Cnet/SitePages/Home.aspx" className={`${styles.navLink}`}>
                 Home
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link to="/sites/CnexiaForEveryone/SitePages/P&CFinaleV2.aspx" className={`${styles.navLink}`}>
+              <Link to="/sites/Cnet/SitePages/P&C.aspx" className={`${styles.navLink}`}>
                 People & Culture
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link to="/sites/CnexiaForEveryone/SitePages/CareerPageV5.aspx" className={`${styles.navLink}`}>
-                Career
-              </Link>
-            </li>
-            <li onClick={removeActive}>
-              <Link to="/sites/CnexiaForEveryone/SitePages/CommPageV5.aspx" className={`${styles.navLink}`}>
+              <Link to="/sites/Cnet/SitePages/Communication.aspx" className={`${styles.navLink}`}>
                 Communication
               </Link>
             </li>
+            <li onClick={removeActive}>
+              <Link to="/sites/Cnet/SitePages/Career.aspx" className={`${styles.navLink}`}>
+                Career
+              </Link>
+            </li>
+
 
           </ul>
           <div
