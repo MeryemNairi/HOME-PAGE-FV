@@ -36,11 +36,7 @@
   }
 }
 
-.title_underline {
-  height: 4px;
-  width: 8%;
-  background-color: #32EB96;
-}
+
 
 .tsl_txt {
   font-size: 22px;
@@ -55,7 +51,6 @@
   gap: 1rem;
   width: 100%;
 }
-
 .tsl_news_item {
   display: flex;
   flex-direction: column;
@@ -65,26 +60,72 @@
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   cursor: pointer;
-  position: relative; /* Ensures that the description's position doesn't affect the layout */
+  position: relative;
+  transition: background-color 0.2s ease, border-left-color 0.2s ease, transform 0.3s ease;
+  padding-left: 1rem;
+  border-left: 6px solid transparent;
 }
 
 .news {
   font-weight: bold;
   font-size: 18px;
   color: #044123;
+  position: relative;
+  z-index: 1; /* Ensure the text is on top */
 }
+
+.flash_line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #e4f2ee, transparent);
+  transform: translateX(-100%);
+  z-index: 0; /* Ensure it's below the .news text */
+  pointer-events: none;
+  animation: flash-line 3s infinite; /* Continuous animation */
+}
+
+@keyframes flash-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.no_flash .flash_line {
+  animation: none; /* Stop the animation */
+  background: none; /* Remove the gradient */
+}
+
 
 .description {
   font-size: 16px;
   color: #333;
   padding-left: 1rem;
   line-height: 1.5;
-  display: none; /* Hide description by default */
+  display: none; /* Hide by default */
 }
 
-.tsl_news_item.selected .description {
-  display: block; /* Show description when item is selected */
+.tsl_news_item:hover .description {
+  display: block; /* Show description on hover */
 }
+
+.tsl_news_item:hover {
+  background-color: rgba(11, 170, 122, 0.1); /* Background color on hover */
+  border-left-color: #00AB7B; /* Border color on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.tsl_news_item:hover .news {
+  transform: translateX(5px); /* Move the title slightly on hover */
+}
+
+
+
 
 .selected {
   background-color: rgba(11, 170, 122, 0.1); /* Background color for selected item */
@@ -94,4 +135,11 @@
   width: 100%;
   height: 1px;
   background-color: rgb(231, 231, 231);
+}
+
+.newsWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* Add any additional styling you need here */
 }

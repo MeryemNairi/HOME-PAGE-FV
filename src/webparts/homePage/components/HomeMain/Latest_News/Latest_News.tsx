@@ -30,21 +30,22 @@ const Latest_News: React.FC = () => {
           <p>Dernières nouvelles</p>
         </div>
       </div>
-      <div className={Styles.sparation_line}> </div>
+      <div className={Styles.sparation_line}></div>
       <div className={Styles.tsl_news_holder}>
-
         {LN.map((item, index) => (
           <div
-            className={`${Styles.tsl_news_item} ${index === selectedIndex ? Styles.selected : ''}`}
+            className={`${Styles.tsl_news_item} ${index === selectedIndex ? `${Styles.selected} ${Styles.no_flash}` : ''}`}
             key={index}
             onClick={() => setSelectedIndex(index === selectedIndex ? null : index)}
           >
-            <div className={Styles.news}>{item.News}</div>
+            <div className={Styles.newsWrapper}>
+              <div className={Styles.flash_line}></div>
+              <div className={Styles.news}>{item.News}</div>
+            </div>
             <div className={Styles.description}>
               {item.Description}
             </div>
           </div>
-
         ))}
       </div>
     </div>
